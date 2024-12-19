@@ -59,3 +59,15 @@
 .bottomOptions:hover {
     background-color: rgb(214, 219, 219);
 }
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+
+.mode {
+    display: flex;
+    gap: 15px;
+}

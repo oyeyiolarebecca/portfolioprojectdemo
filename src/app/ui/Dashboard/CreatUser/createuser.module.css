@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #67bac1 ;
+}
+
+.aside {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.export, .btn, .ptl{
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.export {
+    width: 150px;
+}
+
+ .btn {
+    background-color: #317f31;
+    border: none;
+    color: white;
+}
+/* 
+.btn {
+    border: none;
+} */
+
+.btn:hover {
+    background: #55e155;
+}

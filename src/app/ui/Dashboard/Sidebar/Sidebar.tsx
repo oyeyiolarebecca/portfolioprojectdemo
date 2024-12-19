@@ -1,6 +1,7 @@
 import MenuLink from "./MenuLink/MenuLink"
 import styles from './Sidebar.module.css';
 import Image from 'next/image';
+import { FaToggleOff } from "react-icons/fa6";
 import {
   MdDashboard,
   MdSupervisedUserCircle,
@@ -13,8 +14,6 @@ import {
   MdHelpCenter,
   MdDarkMode,
   MdLogout,
-  MdToggleOff,
-  MdToggleOn,
 } from "react-icons/md";
 
   const menuItems = [
@@ -22,12 +21,12 @@ import {
     title: "Main Menu",
     list: [
       {
-        title: "Patience",
+        title: "Home",
         path: "/dashboard",
         icon: <MdDashboard />,
       },
       {
-        title: "Patiences",
+        title: "Patient",
         path: "/dashboard/patiences",
         icon: <MdSupervisedUserCircle />,
       },
@@ -47,13 +46,13 @@ import {
     title: "Analytics",
     list: [
       {
-        title: "Revenue",
-        path: "/dashboard/revenue",
+        title: "Financial",
+        path: "/dashboard/finacial",
         icon: <MdWork />,
       },
       {
-        title: "Reports",
-        path: "/dashboard/reports",
+        title: "Record",
+        path: "/dashboard/record",
         icon: <MdAnalytics />,
       },
       {
@@ -102,11 +101,17 @@ export default function Sidebar() {
             ))
             }
         </ul>
-        <button className={styles.bottomOptions}>
-          <MdDarkMode />
-          Dark Mode
-          <MdToggleOff />
-        </button>  
+          <button className={styles.bottomOptions}>
+            <div className={styles.toggle}>
+              <div className={styles.mode}>
+                <MdDarkMode style={{fontSize: '20px'}} />
+                <span>Dark Mode</span>
+              </div>
+              <div>
+                <FaToggleOff style={{ color: 'grey', fontSize: '30px' }} />
+              </div>
+            </div>  
+          </button>
         <button className={styles.logout}>
             <MdLogout />
             Logout
