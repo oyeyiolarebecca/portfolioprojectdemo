@@ -29,6 +29,7 @@
 
 .input {
     border: none;
+    outline: none;
 }
 .search {
     display: flex;

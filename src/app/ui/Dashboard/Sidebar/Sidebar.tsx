@@ -82,7 +82,7 @@ import {
 
 export default function Sidebar() {
   return (
-        <div className={styles.containers}> 
+        <div className={styles.container}> 
             <div className={styles.logo}>
                 <Image className={styles.logoImage} src="/medi.png" alt="logo" width="80" height="80"/>
                 <div className={styles.userDetails}>
