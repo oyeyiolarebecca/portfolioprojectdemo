@@ -1,27 +1,24 @@
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"  
-export default function Loginpage(){
-        return(
-            <div>
-            <Card>
-  <CardHeader>
-    <CardTitle>Card Title</CardTitle>
-    <CardDescription>Card Description</CardDescription>
-  </CardHeader>
-  <CardContent>
-    <p>Card Content</p>
-  </CardContent>
-  <CardFooter>
-    <p>Card Footer</p>
-  </CardFooter>
-</Card>
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import LoginForm from "@/forms/LoginForm"
+import Link from "next/link"
 
-            </div>
-        )
+export default function LoginPage(){
+  return <div className="flex bg-white justify-center items-center h-screen w-full">
+    <Card className="w-[40%]">
+      <CardHeader className="text-center">Welcome, Please Login To continue</CardHeader>
+      <CardContent>
+        <LoginForm/>
+        <div className="flex justify-end w-full py-4">
+           <h1 >Forgot Password? <Link href="#">Reset</Link></h1>
+        </div>
+      </CardContent>
+    </Card>
+  </div>
 }
