@@ -8,11 +8,17 @@ import {
 } from "@/components/ui/card"
 import LoginForm from "@/forms/LoginForm"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function LoginPage(){
   return <div className="flex bg-white justify-center items-center h-screen w-full">
     <Card className="w-[40%]">
-      <CardHeader className="text-center">Welcome, Please Login To continue</CardHeader>
+      <div className="flex justify-center items-center">
+        <Image src="/medi.png" alt="logo" width="80" height="80" />
+      </div>
+      <CardHeader className="text-center">
+        Welcome, Please Login To continue
+        </CardHeader>
       <CardContent>
         <LoginForm/>
         <div className="flex justify-end w-full py-4">

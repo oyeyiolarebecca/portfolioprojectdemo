@@ -1,4 +1,4 @@
-.container {
+/* .container {
     postion: fixed;
     top: 40px;
     height: 100%;
@@ -70,4 +70,13 @@
 .mode {
     display: flex;
     gap: 15px;
+} */
+
+/* Add these classes or ensure Tailwind CSS is configured */
+.sidebar {
+    @apply sticky top-0 h-screen flex flex-col;
+}
+
+.overflow-y-auto {
+    @apply overflow-y-auto;
 }
